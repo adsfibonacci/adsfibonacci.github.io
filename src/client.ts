@@ -446,15 +446,19 @@ projectsSection.appendChild(personalHeader);
 const personalProjects = [
   { 
     title: "Linux", 
-    description: `I am a Linux enthusiast. I currently use Arch linux, though I have used NixOS, Gentoo, Fedora, and Void linux in the past. I am currently working on a Linux From Scratch project in the off seasons to learn how the Linux kernel works. My current Arch setup uses <br> <a href="https://github.com/adsfibonacci/dotfiles" target="_blank"> SwayWM </a>.`
+    description: `I am a Linux enthusiast. I currently use Arch linux, though I have used NixOS, Gentoo, Fedora, and Void linux in the past. I am currently working on a Linux From Scratch project in the off seasons to learn how the Linux kernel works. My current Arch setup uses <a href="https://github.com/adsfibonacci/dotfiles" target="_blank"> SwayWM</a> and <a href="https://github.com/adsfibonacci/emacs-configs" target="_blank"> Emacs</a>.`
+  },
+  {
+    title: "Manifolds",
+    description: `I am retyping and reviewing my notes for a Differential Equations on Manifolds class. The topics focus on physical systems with holonomic and nonholonomic constraints and venture into exterior and tensor calculus to compute optimal controls. This also provides an interesting paradigm for machine learning as optimal control and highlights extreme differences between the mathematical theory and implementation of machine learning. The notes are hosted <a href="https://github.com/adsfibonacci/manifold-learning" target="_blank"> here</a>.`
   },
   { 
     title: "High Dimensional Stats", 
     description: `After taking coursework in experimental design due to the applications in dataset design, I began studying high dimensional and projective statistics to complement my coursework. My main materials of reference are <em>Buhlman and Van de Geer's High Dimensional Statistics</em> and <em>Mukerjee and Wu's Modern Theory of Factorial Design</em>.`
   },
   { 
-    title: "Server", 
-    description: "I use UnRaid to manage docker containers and virtual desktops. The purpose was initially to learn networking protocols, but became useful for syncing and backing up files between devices." 
+    title: "Servers", 
+    description: "I use UnRaid to manage docker containers and virtual desktops. The purpose was initially to learn networking protocols, but became useful for syncing and backing up files between devices. I also work with TrueNas for a similar setup. I have multiple Nvidia Quadros in each machine that I am using in a mini compute cluster. This has been my go to device when using deep networks such as RFdiffusion, AlphaFold, and Boltzgen that require more VRAM than consumer hardware can offer." 
   }
 ];
 
