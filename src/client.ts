@@ -453,7 +453,7 @@ const personalProjects = [
     description: "A hobby of mine is testing out new Linux distributions and configurations. I enjoy learning how operating systems interface with hardware. I currently use Arch Linux, but have used Ubuntu, Fedora, RedHat, and Gentoo in the past. I am working on a Linux From Scratch project when I have time." 
   },
   { 
-    title: "Server", 
+    title: "ServerDDD", 
     description: "I use UnRaid to manage docker containers and virtual desktops. The purpose was initially to learn networking protocols, but became useful for syncing and backing up files between devices." 
   }
 ];
