@@ -207,7 +207,7 @@ const sections = menuItems.slice(1).map((item) =>
 const aboutSection = document.getElementById("about");
 if (aboutSection) {
   const paragraphs = [
-    "I am pursuing a Masters in Biomedical Engineering at the University of Michigan. My undergraduate degrees were in Mathematical Biology and Biomedical engineering, also from the University of Michigan. I  completed a minor in biochemistry and computer science. I am focusing in systems biology and computational biology. Academic interests include combinatorial optimization, machine learning, and chaos/control theory.",
+    "I am pursuing a Masters in Biomedical Engineering at the University of Michigan. My undergraduate degrees were in Mathematical Biology and Biomedical engineering, also from the University of Michigan. I  completed a minor in biochemistry and computer science. I am focusing in systems biology and computational biology. Academic interests include combinatorial optimization, machine learning, and chaos/control theory and I recently have began research into generative modeling for protein and drug design.",
     "I am working in Dr. Paul Jensen's lab on the minimal genome project, which relies heavily on combinatorial optimization and reinforcement learning. I am familiar with several different paradigms for AI and automated science. The lab website is ",
     "Programming languages I am familiar with are Python, C++, Matlab, R, Bash, Mathematica, and simulation tools I am familiar with are SolidWorks, FreeCAD, COPASI, and COMSOL."
   ];
@@ -283,9 +283,9 @@ if (resumeSection) {
 const activitiesSection = document.getElementById("activities");
 if (activitiesSection) {
   const clubs = [
-  { title: "Math Circle", description: "The U(M) Math Circle, where guest lecturers create and lead sessions about math topics that are not typically taught in public curriculum, with college students aiding with activities related to the topic. I led a session about Benford's Law and I will lead another one about conic sections. " },
+  { title: "Math Circle", description: "The U(M) Math Circle, where guest lecturers create and lead sessions about math topics that are not typically taught in public curriculum, with college students aiding with activities related to the topic. I led a session about Benford's Law and I have lead another one about conic sections. " },
     { title: "Walking Club", description: "The morning math walkers meet at 6AM weekdays and explore Ann Arbor. I used to run the evening walks, but the position has been transfered to a current member of the Society of Undergraduate Math Students (SUMS)."},
-    { title: "Math Club", description: "Guest lecturers from several graduate programs are given an opportunity to present a math topic of interest at an undergraduate level and increase interest in their research. I will give a talk in early January on the Price of Anarchy which has applications in network flows, mechanical physics, and gene transcription and is used to understand selfish behavior in game theory." },
+    { title: "Math Club", description: "Guest lecturers from several graduate programs are given an opportunity to present a math topic of interest at an undergraduate level and increase interest in their research." },
     { title: "SEE Camp", description: "The Summer Engineering Exploration Camp is hosted through the Society of Women Engineers to expose high schoolers to different disciplines and career paths." },
   ];
 
@@ -308,11 +308,11 @@ if (activitiesSection) {
 const workSection = document.getElementById("experience");
 if (workSection) {
   const experiences = [
-    { title: "Jensen Lab - Graduate Researcher", description: `I enjoyed the course in automated science I took with Dr. Jensen and followed up with more design of experiments coursework. I joined the lab for research this past semester to work on the minimal genome project. This is developing a mathematical model to remove as many genes as possible from <em>Streptococcus Mutans</em> while maintaining viability of the cell line. Techniques I use are regression analysis, feature selection, and Monte-Carlo tree search. I have implemented transformer models, convolutional neural networks, and long-short term memory neural networks as competing models for predicting growth given a genome and am currently extending the combinatorial MCTS algorithms.` },  
-    { title: "Metacoder Bioinformatics Intern", description: "My role at Metacoder preprocessed and analyzed metabolic data for inputs into deep learning algorithms. I used natural language processing algorithms to build disease networks then graph theory to analyze clinical data. I also optimized software to reduce required compute resources and prevent out of memory errors." },
-    { title: "Linear Algebra Course Grader", description: "This is a temporary position through the Biomedical Engineering department during the academic semester. My job was to review homeworks submitted by undergraduates taking an introduction to linear algebra and statistics course. " },
-    { title: "Student Information Technology Consultant", description: "The SITC role is a temporary position through the Mathematics department during academic semesters. This was an IT consultant job that resolved issues that occured in the computer labs for computational math courses." },
-    { title: "Chandrasekaran Lab - Undergraduate Researcher", description: "The lab work here introduced me to the role of optimization research in machine learning algorithms. I also extended my experience with probabilistic machine learning from surface level courses, as well as employed them in a metabolics role. I also compared predictions to baseline methods such as flux balance analysis and other tools in the Cobra toolbox."},
+    { title: "Jensen Lab - Graduate Researcher", description: `I enjoyed the course in automated science I took with Dr. Jensen and followed up with more design of experiments coursework. I joined the lab for research this past semester to work on the minimal genome project. This is developing a mathematical model to remove as many genes as possible from <em>Streptococcus Mutans</em> while maintaining viability of the cell line. Techniques I use are regression analysis, feature selection, and Monte-Carlo tree search. I have implemented transformer models, convolutional neural networks, and long-short term memory neural networks as competing models for predicting growth given a genome and am currently extending the combinatorial MCTS algorithms. I am familiar with multi-GPU distributed systems and have experience building GPU computing clusters. ` },  
+    { title: "Metacoder Bioinformatics Intern", description: "My role at Metacoder preprocessed and analyzed metabolic data for inputs into deep learning algorithms. I used natural language processing algorithms to build disease networks then graph theory to analyze clinical data. I also optimized software to reduce required compute resources and prevent out of memory errors. I also wrote software to distribute neural network models among high performance GPU clusters." },
+    { title: "Linear Algebra Course Grader", description: "This is a temporary position through the Biomedical Engineering department during the academic semester. My job was to review homeworks and quizzes submitted by undergraduates taking an introduction to linear algebra and statistics course. I would relay feedback to the instructional staff to improve the quality of the course." },
+    { title: "Chandrasekaran Lab - Undergraduate Researcher", description: "The lab work here introduced me to the role of optimization research in machine learning algorithms. I also extended my experience with probabilistic machine learning from surface level courses, as well as employed them in a metabolics role. I also compared predictions to baseline methods such as flux balance analysis and other tools in the Cobra toolbox. I currently use similar metabolic models in my automated science research with oral bacteria metabolism."},
+        { title: "Student Information Technology Consultant", description: "The SITC role is a temporary position through the Mathematics department during academic semesters. This was an IT consultant job that resolved issues that occured in the computer labs for computational math courses. My roles ranged from website maintenance and exam proctoring." },
   ];
 
   experiences.forEach(({ title, description }) => {
@@ -340,7 +340,7 @@ if (coursesSection) {
     },
     { 
       title: "Engineering", 
-      items: ["Quantitative Cell Biology", "Quantitative Physiology", "Bioreactor Design", "Immunoengineering", "Biomaterials", "Bioinstrumentation" ] 
+      items: ["Generative AI Protein Design", "Quantitative Cell Biology", "Quantitative Physiology", "Bioreactor Design", "Immunoengineering", "Biomaterials", "Bioinstrumentation" ] 
     },
     { 
       title: "Computer Science", 
@@ -445,15 +445,15 @@ projectsSection.appendChild(personalHeader);
 
 const personalProjects = [
   { 
+    title: "Linux", 
+    description: `I am a Linux enthusiast. I currently use Arch linux, though I have used NixOS, Gentoo, Fedora, and Void linux in the past. I am currently working on a Linux From Scratch project in the off seasons to learn how the Linux kernel works. My current Arch setup uses <br> <a href="https://github.com/adsfibonacci/dotfiles" target="_blank"> SwayWM </a>.`
+  },
+  { 
     title: "High Dimensional Stats", 
     description: `After taking coursework in experimental design due to the applications in dataset design, I began studying high dimensional and projective statistics to complement my coursework. My main materials of reference are <em>Buhlman and Van de Geer's High Dimensional Statistics</em> and <em>Mukerjee and Wu's Modern Theory of Factorial Design</em>.`
   },
   { 
-    title: "Linux", 
-    description: "A hobby of mine is testing out new Linux distributions and configurations. I enjoy learning how operating systems interface with hardware. I currently use Arch Linux, but have used Ubuntu, Fedora, RedHat, and Gentoo in the past. I am working on a Linux From Scratch project when I have time." 
-  },
-  { 
-    title: "ServerDDD", 
+    title: "Server", 
     description: "I use UnRaid to manage docker containers and virtual desktops. The purpose was initially to learn networking protocols, but became useful for syncing and backing up files between devices." 
   }
 ];
